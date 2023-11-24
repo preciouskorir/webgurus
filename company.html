@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Company</title>
+    <style>
+        body {
+            background-color: #4BACC6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            text-align: left;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content:small;
+        }
+
+        .text-box {
+            background-color: white;
+            border: 1px solid blue;
+            padding: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        #logo {
+            width: 300px;
+            height: auto;
+            display: inline-block;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <img id="logo" src="web_logo.jpg" alt="Web Company Logo">
+        <div class="container">
+            <div class="text-box" onclick="showDialoghome('Welcome Home')">Home</div>
+            <div class="text-box" onclick="showGallery('explore Gallery')">Gallery</div>
+            <div class="text-box" onclick="showProducts('see products')">Products</div>
+            <div class="text-box" onclick="showServices('our services')">Services</div>
+    </div>
+
+    <script>
+
+        function showDialoghome(message) {
+            alert('showDialoghome');
+        }
+
+        function showGallery() {
+            alert('showGallery!');
+        }
+
+    
+        function showProducts() {
+            alert('showProducts!');
+        }
+
+        function showServices() {
+            alert('showServices!');
+        }
+
+    </script>
+<style>
+    hr{
+border:none;
+height:4px;
+background-color: white;
+margin:10px;
+width: 700px;
+    }
+</style>
+<hr>
+</hr>
+</body>
+</html>
